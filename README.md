@@ -1,5 +1,7 @@
 # HeapScope
 
+[![CI](https://github.com/shubham-parmar17/heapscope/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/shubham-parmar17/heapscope/actions/workflows/ci.yml)
+
 HeapScope is an interactive C++17 memory allocator lab. It implements arena and fixed-size pool allocators,
 STL and `std::pmr` adapters, and custom `UniquePtr`, `SharedPtr`, and `WeakPtr` types. Its React/TypeScript
 visualizer runs the same C++ allocator code compiled to WebAssembly, while a FastAPI and MongoDB backend
@@ -9,6 +11,13 @@ The project includes 47 GoogleTest cases under AddressSanitizer and UndefinedBeh
 benchmark, WebAssembly smoke checks, OAuth flow tests, and a frontend production build.
 
 [CI workflow](.github/workflows/ci.yml)
+
+## Quick start
+
+1. Install the prerequisites listed below and configure `backend/.env` and `frontend/.env` as described in [Configure environment](#configure-environment).
+2. Start the backend in one terminal by following [Start the backend](#start-the-backend).
+3. Start the frontend in a second terminal by following [Start the frontend](#start-the-frontend).
+4. Open [http://localhost:3000](http://localhost:3000). Google sign-in is optional; allocator demos run without signing in.
 
 ## Layout
 
